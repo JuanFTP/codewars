@@ -37,20 +37,40 @@ document.addEventListener("DOMContentLoaded", function () {
 		let gb = g.toString(2).toString();
 		let bb = b.toString(2).toString();
 
-		console.log(rb, r);
-		console.log(gb, g);
-		console.log(bb, b);
-
-		for(let s = rb.length, x = 7, b = 1; s >= 0; s--, x--, b = b * 2) {
-			b = (b > 8 ? 1 : b);
-			if(rb.charAt(s) == 1) {
-				mat_values[0][x] = b; 
+		/*Convertir R*/
+		for(let im = 7, is = rb.length-1, b = 1; im >= 0 || is == 0; im--, is--, b = b * 2) {
+			b = (b > 8 ? b = 1 : b);
+			if(rb.charAt(is) == "1") {
+				mat_values[0][im] = b;
+			}
+		}
+		
+		/*Convertir G*/
+		for(let im = 7, is = gb.length-1, b = 1; im >= 0 || is == 0; im--, is--, b = b * 2) {
+			b = (b > 8 ? b = 1 : b);
+			if(gb.charAt(is) == "1") {
+				mat_values[1][im] = b;
+			}
+		}
+		
+		/*Convertir B*/
+		for(let im = 7, is = bb.length-1, b = 1; im >= 0 || is == 0; im--, is--, b = b * 2) {
+			b = (b > 8 ? b = 1 : b);
+			if(bb.charAt(is) == "1") {
+				mat_values[2][im] = b;
 			}
 		}
 
-		console.log(mat_values);
-		return "Convirtiendo...";
+		/*Conversión final*/
+		let R1 = (mat_values[0][0]+mat_values[0][1]+mat_values[0][2]+mat_values[0][3]).toString(16).toUpperCase();
+		let R2 = (mat_values[0][4]+mat_values[0][5]+mat_values[0][6]+mat_values[0][7]).toString(16).toUpperCase();
+		let G1 = (mat_values[1][0]+mat_values[1][1]+mat_values[1][2]+mat_values[1][3]).toString(16).toUpperCase();
+		let G2 = (mat_values[1][4]+mat_values[1][5]+mat_values[1][6]+mat_values[1][7]).toString(16).toUpperCase();
+		let B1 = (mat_values[2][0]+mat_values[2][1]+mat_values[2][2]+mat_values[2][3]).toString(16).toUpperCase();
+		let B2 = (mat_values[2][4]+mat_values[2][5]+mat_values[2][6]+mat_values[2][7]).toString(16).toUpperCase();
+		
+		return R1+R2+G1+G2+B1+B2+"".toString(16);
 	}
 
-	console.log(rgb(181, 11, 27));
+	console.log(rgb(156,98,255));
 });
