@@ -10,29 +10,31 @@ document.addEventListener("DOMContentLoaded", function () {
 		rgb(255, 255, 300) // returns FFFFFF
 		rgb(0,0,0) // returns 000000
 		rgb(148, 0, 211) // returns 9400D3
-	*/
-	let mat_values = [
-		[0, 0, 0, 0, 0, 0, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0]
-	];
-	let value_return = "";
 
+		Tarea: Optimizar
+	*/
+	
 	function rgb(r, g, b){
+		let mat_values = [
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0]
+		];
 		value_return = "";
+
 		if(r < 0) { r = 0; } else if (r > 255) { r = 255; }
 		if(g < 0) { g = 0; } else if (g > 255) { g = 255; }
 		if(b < 0) { b = 0; } else if (b > 255) { b = 255; }
 		if(r < 10 && g < 10 && b < 10) {
 			value_return = ""+r+r+g+g+b+b;
 		} else {
-			value_return = toHex(r, g, b);
+			value_return = toHex(r, g, b, mat_values);
 		}
 
-		return value_return;
+		return finalVersion(mat_values);
 	}
 
-	function toHex(r, g, b) {
+	function toHex(r, g, b, mat_values) {
 		let rb = r.toString(2).toString();
 		let gb = g.toString(2).toString();
 		let bb = b.toString(2).toString();
@@ -60,7 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
 				mat_values[2][im] = b;
 			}
 		}
+	}
 
+	function finalVersion(mat_values) {
 		/*Conversión final*/
 		let R1 = (mat_values[0][0]+mat_values[0][1]+mat_values[0][2]+mat_values[0][3]).toString(16).toUpperCase();
 		let R2 = (mat_values[0][4]+mat_values[0][5]+mat_values[0][6]+mat_values[0][7]).toString(16).toUpperCase();
