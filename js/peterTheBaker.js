@@ -14,17 +14,43 @@
 	link: https://www.codewars.com/kata/525c65e51bf619685c000059/train/javascript
 */
 function cakes(recipe, available) {
+	var nItems = 0;
 	var recipeInventory = getInventory(recipe);
 	var availableInventory = getInventory(available);
-	console.log(recipeInventory);
-	console.log(availableInventory);
+	var indexesItems = validateExistingAllIngredients(availableInventory[0], recipeInventory[0]);
+	var nItemsArray = [];
+	if ((indexesItems.length > 0) && (recipeInventory[1].length === indexesItems.length)) {
+		for (let x = 0; x < recipeInventory[1].length; x++) {
+			var valueItemAvailable = availableInventory[1][indexesItems[x]];
+			var valueItemRecipe = recipeInventory[1][x];
+			nItemsArray.push(getNumberTimes(valueItemAvailable, valueItemRecipe));
+		}
+		nItems = Math.min.apply(null, nItemsArray);
+	}
+
+	return nItems;
 }
 
-function getInventory(items) {
-	return [Object.keys(items), Object.values(items)];
-}
+var getNumberTimes = (available, recipe) => available !== 0 && recipe !== 0 ? Math.floor(available / recipe) : 0;
 
-const inputRecibe = { sugar: 1000, oil: 2000, butter: 124 };
-const inputAvalible = { sugar: 10, oil: 250, butter: 10, itemA: 245, itemB: 233 };
+var validateExistingAllIngredients = (itemsAvailables, itemsReceip) => {
+	var indexes = [];
+	itemsReceip.forEach(item => {
+		var index = itemsAvailables.indexOf(item);
+		if (index > -1) {
+			indexes.push(index);
+		} else {
+			indexes = [];
+		}
+	});
+	return indexes;
+};
+
+var getInventory = items => [Object.keys(items), Object.values(items)];
+
+const inputRecibe = { sugar: 1000, oil: 2000, butter: 124, orange: 10 };
+const inputAvalible = { oil: 7500, sugar: 10550, canela: 50, butter: 500, orange: 50, itemA: 245, itemB: 233 };
 
 let numberCakes = cakes(inputRecibe, inputAvalible);
+
+console.log(numberCakes);
