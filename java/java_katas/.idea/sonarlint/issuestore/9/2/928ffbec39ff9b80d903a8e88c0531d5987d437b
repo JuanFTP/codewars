@@ -1,0 +1,8 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù‰ø“
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ò Ÿþÿÿÿÿ
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(‹Õé¥
+X
+java:S1854"=Remove this useless assignment to local variable "temp_char".(¹ò Ÿþÿÿÿÿ
+`
+java:S1858"E"copyValueOf" returns a string, there's no need to call "toString()".(‹Ú´ðÿÿÿÿÿ

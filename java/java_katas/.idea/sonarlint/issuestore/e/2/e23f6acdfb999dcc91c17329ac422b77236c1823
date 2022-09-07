@@ -1,0 +1,18 @@
+
+}
+java:S1192#"bDefine a constant instead of duplicating this literal "No se puede pagar con billetes..." 3 times.(Ä·¾¶ıÿÿÿÿ
+E
+java:S1066"/Merge this if statement with the enclosing one.(ó•Äö
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ö¦
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ«„üÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÓÓÛ
+ƒ
+java:S4165"hRemove this useless assignment; "amount_val" already holds the assigned value along all execution paths.(•úõšûÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(°Ö¦
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(ÂØİşùÿÿÿÿ
+\
+java:S1858"A"valueOf" returns a string, there's no need to call "toString()".(µ«„üÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(Ä·¾¶ıÿÿÿÿ
+M	java:S106%"9Replace this use of System.out or System.err by a logger.(ç¼µ
+M	java:S106("9Replace this use of System.out or System.err by a logger.(ç¼µ

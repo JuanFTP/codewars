@@ -1,0 +1,9 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°žÖ¦
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°žÖ¦
+T
+java:S3400
+"9Remove this method and declare a constant for this value.(Ö§”Óþÿÿÿÿ
+@
+java:S1172"*Remove this unused method parameter "str".(ôÞ¡±

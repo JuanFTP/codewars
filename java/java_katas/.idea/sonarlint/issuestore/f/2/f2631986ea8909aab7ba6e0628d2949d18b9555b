@@ -1,0 +1,15 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûèÿ™ÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûèÿ™ÿÿÿÿÿ
+2
+java:S1643"Use a StringBuilder instead.(”Ò¤¬
+7
+java:S1643"Use a StringBuilder instead.(Öè¸æøÿÿÿÿ
+´
+java:S1598"˜This file "FindTheCharacter.java" should be located in "com\jftp\code" directory, not in "C:\Users\juanf\projects\codewars\code_java\src\org\jftp\code".(ëÙŒ¶úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(û”“­ÿÿÿÿÿ
+S
+java:S1854"=Remove this useless assignment to local variable "character".(²Ãšô
+`
+java:S1659"EDeclare "word_izq" and all following declarations on a separate line.(ûèÿ™ÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Î®ó¶

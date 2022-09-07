@@ -1,0 +1,23 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ö¦
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ‹şÇ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùùØ“ÿÿÿÿÿ
+f	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¢ÎŸ
+k	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃ­„şÿÿÿÿ
+2
+java:S1643"Use a StringBuilder instead.(œûˆÍ
+2
+java:S1643""Use a StringBuilder instead.(ÖÙÒ
+2
+java:S1643;"Use a StringBuilder instead.(¥¹ÉË
+j
+java:S3008"TRename this field "final_str" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãƒ×Â
+i
+java:S3008"SRename this field "temp_str" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«½·
+o
+java:S3008	"TRename this field "clean_str" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ»¤«øÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ùùØ“ÿÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(éí÷„ùÿÿÿÿ
+m
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(Õ©ÜÊúÿÿÿÿ

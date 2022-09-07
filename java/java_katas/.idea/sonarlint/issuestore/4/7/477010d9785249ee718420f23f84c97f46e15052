@@ -1,0 +1,7 @@
+
+r	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Üÿ‡Ïøÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°žÖ¦
+¯
+java:S1598"“This file "MexicanWave.java" should be located in "com\jftp\code" directory, not in "C:\Users\juanf\projects\codewars\code_java\src\org\jftp\code".(ëÙŒ¶úÿÿÿÿ
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(¤á›åüÿÿÿÿ
